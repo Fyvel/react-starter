@@ -3,6 +3,7 @@ import AppContextProvider from './contexts/AppContext';
 import { BrowserRouter } from 'react-router-dom';
 import Routes from './router/routes';
 import Layout from './containers/Layout';
+import AuthContextProvider from './contexts/AuthContext';
 
 function App() {
 	const clients = {
@@ -12,11 +13,13 @@ function App() {
 
 	return (
 		<AppContextProvider clients={clients}>
-			<BrowserRouter>
-				<Layout>
-					<Routes />
-				</Layout>
-			</BrowserRouter>
+			<AuthContextProvider>
+				<BrowserRouter>
+					<Layout>
+						<Routes />
+					</Layout>
+				</BrowserRouter>
+			</AuthContextProvider>
 		</AppContextProvider>
 	);
 }
