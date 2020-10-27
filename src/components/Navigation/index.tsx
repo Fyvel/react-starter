@@ -1,8 +1,9 @@
 import React, { useContext } from "react"
 import { Link } from "react-router-dom"
 import { Button } from "@material-ui/core"
-import { URI } from "../router/routes"
-import { AuthContext } from "../contexts/AuthContext"
+import { URI } from "../../router/routes"
+import { AuthContext } from "../../contexts/AuthContext"
+import DarkModeToggle from "../DarkModeToggle"
 
 export default function Navigation() {
 	const auth = useContext(AuthContext)
@@ -18,6 +19,7 @@ export default function Navigation() {
 			<Button onClick={() => { auth.signOut() }}>
 				Sign out <span role="img" aria-label="lock">🔒</span>
 			</Button>
+			<DarkModeToggle />
 		</nav>
 	)
 }
