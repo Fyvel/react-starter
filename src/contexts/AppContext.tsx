@@ -1,4 +1,4 @@
-import React, { createContext, PropsWithChildren, useContext, useState } from 'react'
+import React, { createContext, PropsWithChildren, useState } from 'react'
 import ServiceFactory, { Clients, Services } from '../services'
 
 type AppContextDefinition = Services | undefined

@@ -1,4 +1,4 @@
-import React, { createContext, ReactNode, useContext, useMemo, useState } from 'react'
+import React, { createContext, ReactNode, useMemo, useState } from 'react'
 
 type User = any
 type AuthContextDefinition = {
