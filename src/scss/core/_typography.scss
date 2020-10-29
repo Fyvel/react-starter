@@ -1,0 +1,21 @@
+$fontTitle: 'Shadows Into Light Two';
+$fontBody: "Karla";
+
+@mixin typo {
+    h1 {font-family: $fontTitle;}
+    h2 {font-family: $fontTitle;}
+    h3 {font-family: $fontTitle;}
+    h4 {font-family: $fontTitle;}
+    h5 {font-family: $fontTitle;}
+    h6 {font-family: $fontTitle;}
+    subtitle1 {font-family: $fontTitle;}
+    subtitle2 {font-family: $fontTitle;}
+    body1 {font-family: $fontBody;}
+    body2 {font-family: $fontBody;}
+    p {font-family: $fontBody;}
+    div {font-family: $fontBody;}
+    span {font-family: $fontBody;}
+    caption {font-family: $fontBody;}
+    button {font-family: $fontTitle;}
+    overline {font-family: $fontBody;}
+}
